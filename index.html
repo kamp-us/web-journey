@@ -16,20 +16,7 @@
 
     <h2>todos</h2>
 
-    <ul id="todo-list">
-      <li id="first-item">
-        finish this page <button id="delete-first-button">X</button>
-      </li>
-      <li id="second-item">
-        finish resume <button id="delete-second-button">X</button>
-      </li>
-
-      <li id="third-item">
-        find job <button id="delete-third-button">X</button>
-      </li>
-
-      <!-- javascrpitle buraya nasil eleman ekleriz onu cozuyoruz -->
-    </ul>
+    <ul id="todo-list"></ul>
 
     <script type="text/javascript">
       const addTodoForm = document.getElementById("add-todo-form");
@@ -46,43 +33,6 @@
       }
 
       addTodoForm.addEventListener("submit", formEventListener);
-
-      /////////////////////////////////////////
-
-      const firstDeleteButton = document.getElementById("delete-first-button");
-      const firstItem = document.getElementById("first-item");
-
-      function removeFirstItem() {
-        console.log("remove first item", firstItem);
-        firstItem.remove();
-      }
-      firstDeleteButton.addEventListener("click", removeFirstItem);
-
-      /////////////////////////////////////////
-
-      const secondDeleteButton = document.getElementById(
-        "delete-second-button"
-      );
-      const secondItem = document.getElementById("second-item");
-
-      function removesecondItem() {
-        console.log("remove second item", secondItem);
-        secondItem.remove();
-      }
-      secondDeleteButton.addEventListener("click", removesecondItem);
-
-      /////////////////////////////////////////
-
-      const thirdDeleteButton = document.getElementById("delete-third-button");
-      const thirdItem = document.getElementById("third-item");
-
-      function removethirdItem() {
-        console.log("remove third item", thirdItem);
-        thirdItem.remove();
-      }
-      thirdDeleteButton.addEventListener("click", removethirdItem);
-
-      ///////////////////////////////////////////
 
       const todoList = document.getElementById("todo-list");
       console.log(todoList);
